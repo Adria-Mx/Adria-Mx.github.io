@@ -9399,7 +9399,10 @@ aside,
 
 @media (max-width: 575px) {
   .about-us-text .feature .icon {
-    border-radius: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 9px;
+    margin-top: 5px;
     padding: 15px;
   }
 
