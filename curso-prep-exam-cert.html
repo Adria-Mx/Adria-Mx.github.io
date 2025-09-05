@@ -160,29 +160,104 @@
                     <div class="col-lg-12">
                         <div class="design-services-text">
                             <h2 style="margin-top: 30px;">Información del curso </h2>
-                            <p>
-                                Nunc eu augue at nunc consectetur venenatis sit amet sodales metus. Sed at gravida nisi,
-                                mattis lacinia ipsum. Pellentesque suscipit odio quis ligula maximus aliquet. Integer
-                                cursus ipsum et posuere
-                                ornare. Aliquam erat volutpat. Vivamus suscipit, orci non venenatis laoreet, odio eros
-                                pharetra dui, vitae aliquam massa elit sit amet dolor. Sed sagittis metus ac porta
-                                tincidunt. Nulla tincidunt, sapien
-                                vitae consequat rhoncus, neque neque faucibus quam, ornare volutpat diam neque ut nunc.
-                                Vivamus porta leo libero, eget vehicula mi facilisis nec. Sed id sollicitudin enim, ut
-                                euismod tellus. Curabitur
-                                eleifend semper erat vel tristique. In ut consequat nisl. Donec ultrices Aliquam erat
-                                volutpat. Vivamus suscipit, orci non venenatis laoreet, odio eros pharetra dui.
-                            </p>
-                            <p>
-                                Nunc eu augue at nunc consectetur venenatis sit amet sodales metus. Sed at gravida nisi,
-                                mattis lacinia ipsum. Pellentesque suscipit odio quis ligula maximus aliquet. Integer
-                                cursus ipsum et posuere
-                                ornare. Aliquam erat volutpat. Vivamus suscipit, orci non venenatis laoreet, odio eros
-                                pharetra dui, vitae aliquam massa elit sit amet dolor. Sed sagittis metus ac porta
-                                tincidunt. Nulla tincidunt.
-                            </p>
-                            <div class="design-services__btn-wrapper">
-                                <a href="#" class="primary__button t-outile-btn">Inscribirme</a>
+                            <!-- Accordion Mejorado -->
+                            <div id="accordionExams" class="accordion-custom">
+
+                                <!-- TOEFL -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTOEFL">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-accordion" data-toggle="collapse"
+                                                data-target="#collapseTOEFL" aria-expanded="true"
+                                                aria-controls="collapseTOEFL">
+                                                TOEFL (Test of English as a Foreign Language)
+                                                <span class="icon"></span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTOEFL" class="collapse show" aria-labelledby="headingTOEFL"
+                                        data-parent="#accordionExams">
+                                        <div class="card-body">
+                                            Evalúa las habilidades en inglés académico (lectura, escucha, escritura y
+                                            habla).
+                                            Es ampliamente aceptado por universidades en Estados Unidos y otros países
+                                            de habla inglesa.
+                                            Demuestra que el estudiante puede desenvolverse en contextos universitarios
+                                            y profesionales internacionales.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FCE -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFCE">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-accordion collapsed" data-toggle="collapse"
+                                                data-target="#collapseFCE" aria-expanded="false"
+                                                aria-controls="collapseFCE">
+                                                FCE (First Certificate in English, ahora B2 First)
+                                                <span class="icon"></span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFCE" class="collapse" aria-labelledby="headingFCE"
+                                        data-parent="#accordionExams">
+                                        <div class="card-body">
+                                            Certificación de Cambridge que acredita un nivel B2 de inglés.
+                                            Mide la capacidad de comunicarse de manera efectiva en situaciones
+                                            cotidianas y laborales.
+                                            Valida un dominio intermedio-alto del idioma, útil para empleos y estudios
+                                            en el extranjero.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CAE -->
+                                <div class="card">
+                                    <div class="card-header" id="headingCAE">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-accordion collapsed" data-toggle="collapse"
+                                                data-target="#collapseCAE" aria-expanded="false"
+                                                aria-controls="collapseCAE">
+                                                CAE (Certificate in Advanced English, ahora C1 Advanced)
+                                                <span class="icon"></span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseCAE" class="collapse" aria-labelledby="headingCAE"
+                                        data-parent="#accordionExams">
+                                        <div class="card-body">
+                                            Certificación de Cambridge que acredita un nivel C1 de inglés.
+                                            Evalúa competencias lingüísticas avanzadas, tanto académicas como
+                                            profesionales.
+                                            Abre oportunidades en universidades de prestigio y empleos internacionales
+                                            donde se requiere un dominio sólido del inglés.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TEFAQ -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTEFAQ">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-accordion collapsed" data-toggle="collapse"
+                                                data-target="#collapseTEFAQ" aria-expanded="false"
+                                                aria-controls="collapseTEFAQ">
+                                                TEFAQ (Test d'évaluation de français adapté au Québec)
+                                                <span class="icon"></span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTEFAQ" class="collapse" aria-labelledby="headingTEFAQ"
+                                        data-parent="#accordionExams">
+                                        <div class="card-body">
+                                            Examen oficial de francés que demuestra tu nivel de comprensión y expresión,
+                                            especialmente oral,
+                                            con el fin de facilitar tu inmigración a la provincia de Quebec y avanzar en
+                                            el proceso de ciudadanía canadiense.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

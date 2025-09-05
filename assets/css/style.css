@@ -12684,3 +12684,104 @@ aside,
   font-size: 32px;
   line-height: 42px;
 }
+
+/* 1) Fija el espacio del icono y evita que el padding lo infle */
+.our-services .about-us-text .feature .icon {
+  box-sizing: border-box;
+  width: 32px !important;
+  height: 32px !important;
+  flex: 0 0 32px !important;
+  padding: 0 !important;
+  /* anula el padding de 15px y 10px */
+  margin: 0 12px 0 0;
+  /* separación del texto */
+  display: inline-flex;
+  /* caja estable para el emoji/<i> */
+  align-items: center;
+  justify-content: center;
+}
+
+/* 2) Asegura que el ícono y el texto se mantengan en fila y pegados a la izquierda */
+.our-services .about-us-text .feature {
+  display: flex;
+  /* por si falta en algún breakpoint */
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 0;
+  /* usamos margin-right del icono */
+}
+
+/* 3) En móvil, evita que el contenedor centre a los hijos */
+@media (max-width: 575px) {
+  .our-services .about-us-text {
+    align-items: stretch !important;
+    /* en vez de center */
+  }
+}
+
+/* Acordeon */
+.accordion-custom .card {
+  border: none;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-custom .card-header {
+  background: #f8f9fa;
+  padding: 0;
+}
+
+.accordion-custom .btn-accordion {
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #444;
+  /* gris por defecto */
+  padding: 15px 20px;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.accordion-custom .btn-accordion:hover {
+  color: #222;
+}
+
+.accordion-custom .btn-accordion:focus {
+  box-shadow: none;
+}
+
+.accordion-custom .card-body {
+  padding: 15px 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Icono de chevron */
+.accordion-custom .btn-accordion .icon::before {
+  content: "\f078";
+  /* fa-chevron-down */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  color: #666;
+  /* color inicial */
+}
+
+/* Cambios cuando está abierto */
+.accordion-custom .btn-accordion[aria-expanded="true"] {
+  color: #fd6a23;
+  /* texto naranja */
+}
+
+.accordion-custom .btn-accordion[aria-expanded="true"] .icon::before {
+  transform: rotate(180deg);
+}
