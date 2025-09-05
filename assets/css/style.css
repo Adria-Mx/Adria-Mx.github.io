@@ -12813,3 +12813,13 @@ aside,
   margin: 0 auto;
   font-size: 1.1rem;
 }
+
+/* logo Bli */
+.logo-bli {
+  height: 28px;
+  /* tamaño uniforme */
+  margin-left: 6px;
+  /* espacio frente al texto */
+  vertical-align: middle;
+  /* alinea con la línea del texto */
+}
