@@ -12785,3 +12785,31 @@ aside,
 .accordion-custom .btn-accordion[aria-expanded="true"] .icon::before {
   transform: rotate(180deg);
 }
+
+/* carrusel */
+.bg-gradient-courses {
+  background: linear-gradient(135deg, #2b3a67 0%, #3f5fbf 50%, #5aa6e0 100%);
+}
+
+.icon-bubble {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
+}
+
+.carousel h3,
+.carousel p {
+  color: #fff !important;
+}
+
+.carousel p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
