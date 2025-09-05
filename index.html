@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/default.css" />
     <link rel="stylesheet" href="assets/css/aos.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 
 <body>
@@ -130,7 +131,7 @@
                                 </a>
                                 <div class="overlay-playbutton">
                                     <a class="popup-video video-border"
-                                        href="https://youtu.be/vuy-vlugI0Y?si=7pvGCgslT17TbTcS">
+                                        href="https://www.youtube.com/watch?v=vuy-vlugI0Y">
                                         <i class="fas fa-play"></i>
                                     </a>
                                 </div>
@@ -454,10 +455,13 @@
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script>
-        /* magnificPopup video view*/
-        $('.popup-video').magnificPopup({
-            type: 'iframe',
+        $(document).ready(function () {
+            $('.popup-video').magnificPopup({
+                type: 'iframe'
+            });
         });
     </script>
     <!-- Purchase Button -->
