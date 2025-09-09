@@ -8841,7 +8841,13 @@ aside,
   line-height: 64px;
   color: #000560;
   font-family: "Gilroy-Bold";
-  text-transform: capitalize;
+  text-transform: lowercase;
+  /* todo en minúsculas */
+}
+
+.about-solution .section-title h2::first-letter {
+  text-transform: uppercase;
+  /* solo la primera en mayúscula */
 }
 
 .about-solution .solution-wrapper .solution-title h4 {
